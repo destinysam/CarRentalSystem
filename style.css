@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Search Box */
+.form-outline{
+  width: 300px; 
+}
+/* Filters */
+.display-6{
+    font-weight: bolder;
+}
+.form-select{
+    border: none;
+    border-bottom: 1px solid #6c757d;
+    border-radius: 1px;
+}
+.text-muted{
+    margin-left: 15px;
+}
+.shadow a{
+    text-decoration: none;
+    color: darkslategray;
+}
+.d-inline-block p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.d-inline-block .carAttribute{
+    display: inline;
+    color: darkslategray;
+    margin-left: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    
+}
+.pay-per-hour del{
+    font-size: 11px;
+    color: darkslategray;
+    display: block;
+}
+@media only screen and (min-device-widht:600px){
+    .pay-per-hour{
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-device-width:480px){
+    .shadow
+    {
+        text-align: center;
+    }
+    .d-inline-block{
+        margin-top: 5px;
+    }
+}
