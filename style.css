@@ -8,6 +8,21 @@ body{
   margin-top: 1rem;
   
 }
+ .form-control::placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+.form-outline .fa{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/* End Search */
 /* START Filter */
 .display-6{
     font-weight: bolder;
@@ -56,6 +71,7 @@ option{
     color: darkslategray;
     display: block;
 }
+/* End Car Objects */
 /* MEDIA QUERIES FOR MOBILE AND TABLET DEVICES */
 @media screen and (min-width:991px) {
     #mobile-filter{
@@ -76,9 +92,6 @@ option{
     }
     #carObjects{
         margin-top: 1rem;
-    }
-    .shadow .d-inline-block{
-        margin-left: 30px;
     }
 }
 @media screen and (min-width:568px) and (max-width:990px) {
