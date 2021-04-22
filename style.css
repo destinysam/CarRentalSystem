@@ -5,24 +5,41 @@ body{
 /* Search Box */
 .form-outline{
   width: 300px; 
+  margin-top: 1rem;
+  
 }
-/* Filters */
+/* START Filter */
 .display-6{
     font-weight: bolder;
+    margin-left: 5rem;
+}
+.filter{
+    display: none;
 }
 .form-select{
     border: none;
-    border-bottom: 1px solid #6c757d;
-    border-radius: 1px;
+}
+select:focus{
+    outline: none;
+    border: none;
 }
 .text-muted{
     margin-left: 15px;
 }
+option{
+    font-weight: bold;
+}
+/* End Filter */
+/* Car Objects */
 .shadow a{
     text-decoration: none;
     color: darkslategray;
 }
 .d-inline-block p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.carName{
     font-size: 15px;
     font-weight: bolder;
 }
@@ -39,13 +56,43 @@ body{
     color: darkslategray;
     display: block;
 }
-@media only screen and (min-device-widht:600px){
+/* MEDIA QUERIES FOR MOBILE AND TABLET DEVICES */
+@media screen and (min-width:991px) {
+    #mobile-filter{
+        display: block;
+    }
     .pay-per-hour{
         margin-left: 5rem;
     }
+    #mobile-filter{
+        border:  1px solid darkslategray;
+        height: 6rem;
+    }
+    #mobile-filter .col-auto{
+        margin-top: 22px;
+    }
+    .form-outline{
+        margin-top: 2rem;
+    }
+    #carObjects{
+        margin-top: 1rem;
+    }
+    .shadow .d-inline-block{
+        margin-left: 30px;
+    }
 }
-
-@media only screen and (max-device-width:480px){
+@media screen and (min-width:568px) and (max-width:990px) {
+    .filter{
+        display: inline;
+    }
+    .shadow{
+        text-align: center;
+    }
+}
+@media screen and (max-width:567px) {
+    .filter{
+        display: block;
+    }
     .shadow
     {
         text-align: center;
@@ -53,4 +100,5 @@ body{
     .d-inline-block{
         margin-top: 5px;
     }
+   
 }

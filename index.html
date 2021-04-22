@@ -42,20 +42,22 @@
       </nav>
       <!-- End Navigation Bar -->
       <!-- Search Box -->
-      <div class="form-outline mt-4 mx-auto">
+      <div class="form-outline mx-auto">
         <input type="search" id="form1" class="form-control" placeholder="Search By Car Name"
         aria-label="Search" />
       </div>
       <!--Start Filters -->
-      <button class="btn btn-primary m-2 " type="button" data-bs-toggle="collapse" data-bs-target="#mobile-filter" aria-controls="mobile-filter" aria-expanded="false"  aria-label="Toggle navigation">Filters<span class="fas fa-filter ms-1"></span>
-      </button>
+      <div class="filter">
+        <button class="btn btn-primary m-2 " type="button" data-bs-toggle="collapse" data-bs-target="#mobile-filter" aria-controls="mobile-filter" aria-expanded="false"  aria-label="Toggle navigation">Filters<span class="fas fa-filter ms-1"></span>
+        </button>
+      </div>
+      <h4 class="display-6  d-none d-lg-block d-xl-block">filter by</h4>
       <div class="container" id="mobile-filter">
-          <h4 class="display-6 d-none d-lg-block d-xl-block">filter by</h4>
           <div class="row">
                 <div class="col-auto">
                     <h5 class="text-muted">City</h5>
                     <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Choose city</option>
+                        <option selected>Srinagar</option>
                         <option value="1">Kulgam</option>
                         <option value="2">Anantnag</option>
                         <option value="3">Budgam</option>
@@ -86,7 +88,7 @@
                 <div class="col-auto">
                     <h5 class="text-muted">Brand</h5>
                     <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Choose Brand</option>
+                        <option selected>Toyota</option>
                         <option value="1">Hundayi</option>
                         <option value="2">Ford</option>
                         <option value="3">Suzuki</option>
@@ -96,22 +98,22 @@
                 <div class="col-auto">
                     <h5 class="text-muted">Fuel</h5>
                     <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Choose Fuel type</option>
-                        <option value="1">Petrol</option>
-                        <option value="2">Diesel</option>
+                        <option selected>Petrol</option>
+                        <option value="1">Diesel</option>
                     </select>
                 </div>
                 <div class="col-auto">
                     <h5 class="text-muted">Transmission</h5>
                     <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Choose Transmission</option>
-                        <option value="1">Automatic</option>
-                        <option value="2">Manual</option>
+                        <option selected>Automatic</option>
+                        <option value="1">Manual</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!--END FILTERS  -->
+        <!-- Objects -->
+        <div class="container" id="carObjects">
           <div class="row">
             <div class="col-auto">
               <div class="shadow p-4 m-2 bg-body rounded">
@@ -119,8 +121,8 @@
                     <div class="d-inline-block">
                       <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
                     </div>
-                    <div class="d-inline-block ms-4">
-                      <p>Mahindra XUV100</p>
+                    <div class="d-inline-block">
+                      <p class="carName">Mahindra XUV100</p>
                       <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
                       <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
                     </div>
@@ -138,8 +140,8 @@
                   <div class="d-inline-block">
                     <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
                   </div>
-                  <div class="d-inline-block ms-4">
-                    <p>Mahindra XUV100</p>
+                  <div class="d-inline-block ">
+                    <p class="carName">Mahindra XUV100</p>
                     <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
                     <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
                   </div>
@@ -157,8 +159,8 @@
                   <div class="d-inline-block">
                     <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
                   </div>
-                  <div class="d-inline-block ms-4">
-                    <p>Mahindra XUV100</p>
+                  <div class="d-inline-block">
+                    <p class="carName">Mahindra XUV100</p>
                     <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
                     <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
                   </div>
