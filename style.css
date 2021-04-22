@@ -113,5 +113,8 @@ option{
     .d-inline-block{
         margin-top: 5px;
     }
+    .pay-per-hour{
+        margin-left: 5rem;
+    }
    
 }
