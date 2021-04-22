@@ -3,6 +3,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Search Box */
+input{
+    text-align: center;
+}
 .form-outline{
   width: 300px; 
   margin-top: 1rem;
@@ -93,6 +96,9 @@ option{
     #carObjects{
         margin-top: 1rem;
     }
+    .shadow{
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    }
 }
 @media screen and (min-width:568px) and (max-width:990px) {
     .filter{
@@ -101,20 +107,23 @@ option{
     .shadow{
         text-align: center;
     }
+    .shadow{
+        padding: 1rem 3.5rem 1rem 3.5rem;
+    }
 }
 @media screen and (max-width:567px) {
     .filter{
         display: block;
     }
-    .shadow
+    .shadow 
     {
         text-align: center;
     }
     .d-inline-block{
         margin-top: 5px;
     }
-    .pay-per-hour{
-        margin-left: 5rem;
-    }
    
+    .shadow{
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    }
 }
