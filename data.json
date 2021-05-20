@@ -1,0 +1,29 @@
+{
+    "vehicle": [
+ 
+       {
+          "id":"01",
+          "vehcileName": "Mahindra",
+          "VehicleImage": "",
+          "Fuel": "Patrol",
+          "HourlyRent": "1100",
+          "Transmission": "Automatic"
+       },
+       {
+        "id":"01",
+        "vehcileName": "Mahindra",
+        "VehicleImage": "",
+        "Fuel": "Patrol",
+        "HourlyRent": "1100",
+        "Transmission": "Automatic"
+     },
+     {
+        "id":"01",
+        "vehcileName": "Mahindra",
+        "VehicleImage": "",
+        "Fuel": "Patrol",
+        "HourlyRent": "1100",
+        "Transmission": "Automatic"
+     }
+    ]
+ }
