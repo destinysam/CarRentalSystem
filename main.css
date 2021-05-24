@@ -248,7 +248,7 @@ input[type=file]::file-selector-button {
 @media (max-width:870px){
     .container{
         min-height: 800px;
-        height: 110vh;
+        height: 100vh;
     }
     .container:before{
         width: 1500px;
@@ -325,6 +325,10 @@ input[type=file]::file-selector-button {
 
 }
 @media (max-width:570px){
+    .container{
+        min-height: 800px;
+        height: 120vh;
+    }
     #signup-signin-container form{
         padding: 0 1.5rem;
 
