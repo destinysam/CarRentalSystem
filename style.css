@@ -365,7 +365,7 @@ form.sign-in-form {
     height: 1500px;
     transform: translateX(-50%);
     left: 30%;
-    bottom: 40%;
+    bottom: 70%;
     right: initial;
     top: initial;
     transition: 2s ease-in-out;
@@ -418,12 +418,12 @@ form.sign-in-form {
   }
 
   .container:before {
-    bottom: 45%;
+    bottom: 70%;
     left: 50%;
   }
 
   .container.sign-up-mode:before {
-    bottom: 15%;
+    bottom: 25%;
     left: 50%;
   }
 }
