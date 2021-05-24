@@ -1,191 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container" id="signup-signin-container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="email" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                    <p class="social-text">Or Sign in with Social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-phone"></i>
+                        <input type="tel" placeholder="Phone no">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-map-marker"></i>
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Liscence no">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="IdProof">
+                        <label for="uploadfile">Upload Your ID Proof
+                            <input type="file" name="file" id="uploadfile">
+                        </label>
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn solid">
+                   
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>Kashmir Rentals:A way to enjoy every type of ride</p>
+                    <button type="button" class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+                <img src="img/signUp.svg" class="signUpIn-image" alt="">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Have Account</h3>
+                    <p>Kashmir Rentals:A way to enjoy every type of ride</p>
+                    <button type="button" class="btn transparent" id="sign-in-btn">Sign In</button>
+                </div>
+                <img src="img/cars.svg" class="signUpIn-image" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
 
-    <!-- Bootstrap CSS -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
-    <title>Vehicle Rental System</title>
-  </head>
-  <body>
-      <!-- Start Navigation Bar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">page 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">page 3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">page 4</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">page 5</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navigation Bar -->
-      <!-- Search Box -->
-      
-      <div class="form-outline mx-auto">
-          <i class="fa fa-search"></i>
-          <input type="search" id="form1" class="form-control" maxlength="35" placeholder="Search By Car Name"
-        aria-label="Search" />
-      </div>
-      <!--Start Filters -->
-      <div class="filter">
-        <button class="btn btn-primary m-2 " type="button" data-bs-toggle="collapse" data-bs-target="#mobile-filter" aria-controls="mobile-filter" aria-expanded="false"  aria-label="Toggle navigation">Filters<span class="fas fa-filter ms-1"></span>
-        </button>
-      </div>
-      <h4 class="display-6  d-none d-lg-block d-xl-block">filter by</h4>
-      <div class="container collapse" id="mobile-filter">
-          <div class="row">
-                <div class="col-auto g-0">
-                    <h5 class="text-muted">City</h5>
-                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Srinagar</option>
-                        <option value="1">Kulgam</option>
-                        <option value="2">Anantnag</option>
-                        <option value="3">Budgam</option>
-                        <option value="4">Baramulla</option>
-                    </select>
-                </div>
-                <div class="col-auto g-0">
-                    <h5 class="text-muted">Price Range</h5>
-                    <div class="d-inline-block">
-                        <select class="form-select form-select-md mb-3" id="min-price" aria-label=".form-select-md example">
-                          <option selected>1000</option>
-                          <option value="1">2000</option>
-                          <option value="2">3000</option>
-                          <option value="3">4000</option>
-                          <option value="4">5000</option>
-                      </select>
-                    </div>
-                    <div class="d-inline-block">  
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                            <option selected>10000</option>
-                            <option value="1">11000</option>
-                            <option value="2">12000</option>
-                            <option value="3">13000</option>
-                            <option value="4">14000</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-auto g-0">
-                    <h5 class="text-muted">Brand</h5>
-                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Toyota</option>
-                        <option value="1">Hundayi</option>
-                        <option value="2">Ford</option>
-                        <option value="3">Suzuki</option>
-                        <option value="4">Mahindra</option>
-                    </select>
-                </div>
-                <div class="col-auto g-0">
-                    <h5 class="text-muted">Fuel</h5>
-                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Petrol</option>
-                        <option value="1">Diesel</option>
-                    </select>
-                </div>
-                <div class="col-auto g-0">
-                    <h5 class="text-muted">Transmission</h5>
-                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                        <option selected>Automatic</option>
-                        <option value="1">Manual</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <!--END FILTERS  -->
-        <!--Start Car Objects -->
-        <div class="container" id="carObjects">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6 g-0">
-              <div class="shadow p-4 m-2 bg-body rounded">
-                <a href="#" target="_blank">
-                    <div class="d-inline-block">
-                      <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
-                    </div>
-                    <div class="d-inline-block ms-4">
-                      <p class="carName">Mahindra XUV100</p>
-                      <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
-                      <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
-                    </div>
-                    <div class="d-inline-block pay-per-hour">
-                      <p>₹ 1100/hr<br /> 
-                        <del>1100/hr</del>
-                      </p>
-                    </div> 
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 g-0">
-              <div class="shadow p-4 m-2 bg-body rounded">
-                <a href="#" target="_blank">
-                  <div class="d-inline-block">
-                    <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
-                  </div>
-                  <div class="d-inline-block ms-4">
-                    <p class="carName">Mahindra XUV100</p>
-                    <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
-                    <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
-                  </div>
-                  <div class="d-inline-block pay-per-hour">
-                    <p>₹ 1100/hr<br /> 
-                      <del>1100/hr</del>
-                    </p>
-                  </div> 
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 g-0">
-              <div class="shadow p-4 m-2 bg-body rounded">
-                <a href="#" target="_blank">
-                  <div class="d-inline-block">
-                    <img src="img/alistair-smith-fxliDZFt-qY-unsplash.jpg" class="img-fluid" height="100px" width="100px">
-                  </div>
-                  <div class="d-inline-block ms-4">
-                    <p class="carName">Mahindra XUV100</p>
-                    <i class="fas fa-gas-pump"><p class="carAttribute">Diesel</p></i>
-                    <i class="fas fa-arrows-alt ms-2"><p class="carAttribute">Automatic</p></i>           
-                  </div>
-                  <div class="d-inline-block pay-per-hour">
-                    <p>₹ 1100/hr<br /> 
-                      <del>1100/hr</del>
-                    </p>
-                  </div> 
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Car Objects -->
-    <script src="data.json"></script>
-    <script src="main.js"></script>    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
