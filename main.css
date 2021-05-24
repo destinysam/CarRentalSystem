@@ -337,7 +337,7 @@
 @media (max-width:570px){
     .container{
         min-height: 800px;
-        height: 130vh;
+        height: 120vh;
     }
     #signup-signin-container form{
         padding: 0 1.5rem;
