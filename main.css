@@ -258,7 +258,7 @@
 @media (max-width:870px){
     .container{
         min-height: 800px;
-        height: 100vh;
+        height: 110vh;
     }
     .container:before{
         width: 1500px;
