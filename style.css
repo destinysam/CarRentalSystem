@@ -373,7 +373,7 @@ form.sign-in-form {
 
   .container.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    bottom: 40%;
+    bottom: 35%;
     right: initial;
   }
 
