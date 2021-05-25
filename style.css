@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Body */
 body,
 input {
   font-family: "Poppins", sans-serif;
 }
-
+/* Sign-Up Sign-In Start */
 .container {
   position: relative;
   width: 100%;
@@ -65,7 +64,7 @@ form.sign-in-form {
   color: #444;
   margin-bottom: 10px;
 }
-
+/* Input Fields Start */
 .input-field {
   max-width: 380px;
   width: 100%;
@@ -101,6 +100,7 @@ form.sign-in-form {
   margin-left: 3rem;
   justify-content: center;
 }
+/* Overrided File Upload Button Start */
 .IdProof h5{
   font-weight: 500;
   font-size: 1rem;
@@ -122,11 +122,13 @@ form.sign-in-form {
   color: darkslategray;
   font-family: sans-serif;
 }
+/* File Upload Button End */
 .input-field input::placeholder {
   color: #aaa;
   font-weight: 500;
 }
-
+/* Input Fields End */
+/* Social Media Icons Start */
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
@@ -156,7 +158,7 @@ form.sign-in-form {
   color: #4481eb;
   border-color: #4481eb;
 }
-
+/* Social Media Icons End */
 .btn {
   width: 150px;
   background-color: #5995fd;
@@ -175,6 +177,8 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+/* Sign-Up Sign-In End */
+/*  Panel Start */
 .panels-container {
   position: absolute;
   height: 100%;
@@ -256,7 +260,7 @@ form.sign-in-form {
   transform: translateX(800px);
 }
 
-/* ANIMATION */
+/* ANIMATION Start*/
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
@@ -294,7 +298,8 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel {
   pointer-events: all;
 }
-
+/* Animation End */
+/* Panel Start */
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
@@ -373,8 +378,11 @@ form.sign-in-form {
 
   .container.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    bottom: 25%;
+    bottom: 30%;
     right: initial;
+  }
+  .panel.right-panel .content{
+    margin-top: 5rem;
   }
 
   .container.sign-up-mode .left-panel .image,
@@ -393,7 +401,7 @@ form.sign-in-form {
   }
 
   .container.sign-up-mode .signin-signup {
-    top: 5%;
+    top: 1%;
     transform: translate(-50%, 0);
   }
 }
