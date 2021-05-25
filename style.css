@@ -413,6 +413,9 @@ form.sign-in-form {
   .panel .content {
     padding: 0.5rem 1rem;
   }
+  .panel.right-panel .content{
+    margin-top: 5rem;
+  }
   .container {
     padding: 1.5rem;
   }
