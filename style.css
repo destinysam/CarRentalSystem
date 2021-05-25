@@ -384,9 +384,6 @@ form.sign-in-form {
     bottom: 30%;
     right: initial;
   }
-  .panel.right-panel .content{
-    margin-top: 5rem;
-  }
 
   .container.sign-up-mode .left-panel .image,
   .container.sign-up-mode .left-panel .content {
