@@ -423,7 +423,7 @@ form.sign-in-form {
   }
 
   .container.sign-up-mode:before {
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
   }
 }
