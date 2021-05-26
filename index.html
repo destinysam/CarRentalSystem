@@ -1,119 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Sign in & Sign up Form</title>
+    <title>VehicleRentalSystem |about</title>
   </head>
   <body>
-    <!-- Sign-Up Sign-In Start -->
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <!-- Sign-In Start -->
-          <form action="#" class="sign-in-form">  
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fa fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fa fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fa fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fa fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fa fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </div>
-          </form>
-          <!-- Sign-In End -->
-          <!-- Sign-Up Start -->
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fa fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fa fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fa fa-phone"></i>
-              <input type="tel" placeholder="Phone no" />
-            </div>
-            <div class="input-field">
-              <i class="fa fa-map-marker"></i>
-              <input type="text" name="address" placeholder="Address">
-          </div>
-          <div class="input-field">
-              <i class="fa fa-drivers-license-o"></i>
-              <input type="text" name="liscenceno" placeholder="Liscence no">
-          </div>
-          <div class="input-field">
-              <i class="fa fa-lock"></i>
-              <input type="password" name="password" placeholder="Password">
-          </div>
-          <div class="IdProof">
-              <h5>Upload your Id Proof</h5>
-              <input type="file" name="file" id="actual-btn" hidden>
-              <label for="actual-btn" id="label">Choose file
-              </label>
-              <span id="file-chosen">no file chosen</span>
-          </div>
-            <input type="submit" class="btn" value="Sign up" />
-          </form>
-          <!-- Sign-Up End -->
+    <div class="container mt-4">
+        <div class="text-center">
+            <h1 class="badge bg-secondary">About Us</h1>
+            <p>Kashmir Rentals is a web solution to help manage a vehicle rental bussiness
+                Here you can book a vehcile for one hour or more than it.Kashmir Rentals makes
+                it possible for you to enjoy every type of ride like sports cars,sports bikes.
+                Multiple types of Vehicles are available at Kashmir Rentals,fullfill yours dreams
+                by booking XUV,SUV cars on Kashmir Rentals.
+            </p>     
         </div>
-      </div>
-      <!-- Sign-Up Sign-In End -->
-      <!-- Panels Start  -->
-      <div class="panels-container">
-        <!-- Up or Left Panel Start -->
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>New here ?</h3>
-            <p>
-              Kashmir Rentals:A way to enjoy every type of ride
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
+        <h1 class="text-center text-secondary">Our Team</h1>
+        <div class="row justify-content-center mt-4" id="teamrow">
+            <div class="col-auto">
+              <img src="haider.jpeg" class="img-fluid mx-auto d-block rounded-circle" alt="team member" style="height: 200px;width: 200px;">
+              <h4 class="text-center mt-2">HaiderAliPunjabi</h4>
+              <div class="text-center">
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-auto ">
+              <img src="aijz.jpg" class="img-fluid mx-auto d-block rounded-circle" alt="team member" style="height: 200px;width: 200px;">
+              <h4 class="text-center mt-2">Aijaz Wani</h4>
+              <div class="text-center">
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-auto">
+              <img src="developer.jpg" class="img-fluid mx-auto d-block rounded-circle" alt="team member" style="height: 200px;width: 200px;">
+              <h4 class="text-center mt-2">Rather Sameer</h4>
+              <div class="text-center">
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+                <span class="fa-stack fa-1x">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
-          <img src="img/signUp.svg" class="image" alt="" />
         </div>
-        <!-- Up or Left panel End -->
-        <!-- Down or Right Panel Start  -->
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>Have Account</h3>
-            <p>
-              Kashmir Rentals:A way to enjoy every type of ride
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
-          </div>
-          <img src="img/cars.svg" class="image" alt="" />
-        </div>
-        <!-- Down or Right Panel end -->
-      </div>
+
     </div>
-    <!-- Panel End -->
-    <script src="app.js"></script>
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
