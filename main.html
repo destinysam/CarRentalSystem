@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+    <div class="container">    
+        <div class="row">
+            <div class="col-md-12 col-lg-6 g-0" id="vehicleObjects">
+            </div>
+        </div>
+        <div class="row justify-content-center" id="">
+            <div class="col-sm-6 col-md-auto">
+                <h5 class="text-muted">City</h5>
+                <select class="form-select form-select-md mb-0" id="district" aria-label=".form-select-md example">
+                    <option selected="" value="srinagar">Srinagar</option>
+                    <option value="kulgam">Kulgam</option>
+                    <option value="anantnag">Anantnag</option>
+                    <option value="budgam">Budgam</option>
+                    <option value="baramulla">Baramulla</option>
+                </select>
+                <hr class="underline">
+            </div>
+            <div class="col-sm-6 col-md-auto">
+                <h5 class="text-muted">Price Range</h5>
+                <div class="d-inline-block">
+                    <select class="form-select form-select-md mb-0" id="min_price"
+                        aria-label=".form-select-md example">
+                        <option selected="" value="1000">1000</option>
+                        <option value="2000">2000</option>
+                        <option value="3000">3000</option>
+                        <option value="4000">4000</option>
+                        <option value="5000">5000</option>
+                    </select>
+                    <hr class="underline">
+                </div>
+                <div class="d-inline-block">
+                    <select class="form-select form-select-md mb-0" id="max_price" aria-label=".form-select-md example">
+                        <option selected="" value="9000">9000</option>
+                        <option value="11000">11000</option>
+                        <option value="12000">12000</option>
+                        <option value="13000">13000</option>
+                        <option value="14000">14000</option>
+                    </select>
+                    <hr class="underline">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-auto">
+                <h5 class="text-muted">Brand</h5>
+                <select class="form-select form-select-md mb-0" id="brand" aria-label=".form-select-md example">
+                    <option selected="" value="toyota">Toyota</option>
+                    <option value="hundayi">Hundayi</option>
+                    <option value="ford">Ford</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="mahindra">Mahindra</option>
+                </select>
+                <hr class="underline">
+            </div>
+            <div class="col-sm-6 col-md-auto">
+                <h5 class="text-muted">Fuel</h5>
+                <select class="form-select form-select-md mb-0" id="fuel" aria-label=".form-select-md example">
+                    <option selected="" value="petrol">Petrol</option>
+                    <option value="1" value="diesel">Diesel</option>
+                </select>
+                <hr class="underline">
+            </div>
+            <div class="col-sm-6 col-md-auto">
+                <h5 class="text-muted">Transmission</h5>
+                <select class="form-select form-select-md mb-0" id="transmission" aria-label=".form-select-md example">
+                    <option selected="" value="automatic">Automatic</option>
+                    <option value="manual">Manual</option>
+                </select>
+                <hr class="underline">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
