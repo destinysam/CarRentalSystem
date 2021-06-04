@@ -39,38 +39,23 @@ loadData().then(function(data){
     }
 })
 // GETTING VALUES FROM FILTER BOXES
-function getvalues(){
-    let district = document.getElementById("district")
-    let min_price = document.getElementById("min_price")
-    let max_price = document.getElementById("max_price")
-    let brand = document.getElementById("brand")
-    let fuel = document.getElementById("fuel")
-    let transmission = document.getElementById("transmission")
-    list = []
-    list.push(district.value,min_price.value,max_price.value,brand.value,fuel.value,transmission.value)
-    const params = {
-        district : district.value,
-        min_price : min_price.value,
-        max_price : max_price.value,
-        brand : brand.value,
-        fuel : fuel.value,
-        transmission : transmission.value
+function apply_filter_Values(){
+    let Allselect = document.getElementById("filterbars")
+    let AllSelectTags = Allselect.getElementsByTagName("select")
+    let dict = {}
+    for (var i=0;i<AllSelectTags.length;i++){
+        let Key = AllSelectTags[i].getAttribute("key")
+        let Value = AllSelectTags[i].value
+        if (Value != 0){
+            dict[Key] = AllSelectTags[i].options[AllSelectTags[i].selectedIndex].text
+        }
+        
     }
-    const options = {
-        method : "POST",
-        body : JSON.stringify(params) 
-    }
-    fetch("/endpoint",options)
-    .then(function(resp){
-        return resp.json()
-    })
-    .then(function(data){
-        return data
-    })
+    return dict
 }
-let Allselect = document.getElementsByClassName("form-select")
-for (var i=0;i<Allselect.length;i++){
-    Allselect[i].addEventListener("change",function(){
-        getvalues()
-    })
-}
+let apply = document.getElementById("apply")
+apply.addEventListener("click",function(){
+    apply_filter_Values()
+})
+
+

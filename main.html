@@ -19,69 +19,74 @@
             <div class="col-md-12 col-lg-6 g-0" id="vehicleObjects">
             </div>
         </div>
-        <div class="row justify-content-center" id="">
+        <div class="row justify-content-center" id="filterbars">
             <div class="col-sm-6 col-md-auto">
                 <h5 class="text-muted">City</h5>
-                <select class="form-select form-select-md mb-0" id="district" aria-label=".form-select-md example">
-                    <option selected="" value="srinagar">Srinagar</option>
-                    <option value="kulgam">Kulgam</option>
-                    <option value="anantnag">Anantnag</option>
-                    <option value="budgam">Budgam</option>
-                    <option value="baramulla">Baramulla</option>
+                <select key="district" class="form-select form-select-md mb-0" id="district" aria-label=".form-select-md example">
+                    <option selected value="0">NA</option>
+                    <option  value="1">Srinagar</option>
+                    <option value="2">Kulgam</option>
+                    <option value="3">Anantnag</option>
+                    <option value="4">Budgam</option>
+                    <option value="5">Baramulla</option>
                 </select>
                 <hr class="underline">
             </div>
             <div class="col-sm-6 col-md-auto">
                 <h5 class="text-muted">Price Range</h5>
                 <div class="d-inline-block">
-                    <select class="form-select form-select-md mb-0" id="min_price"
+                    <select key="min_price" class="form-select form-select-md mb-0" id="min_price"
                         aria-label=".form-select-md example">
-                        <option selected="" value="1000">1000</option>
-                        <option value="2000">2000</option>
-                        <option value="3000">3000</option>
-                        <option value="4000">4000</option>
-                        <option value="5000">5000</option>
+                        <option selected value="0">NA</option>
+                        <option  value="1">2000</option>
+                        <option value="2">3000</option>
+                        <option value="3">4000</option>
+                        <option value="4">5000</option>
                     </select>
                     <hr class="underline">
                 </div>
                 <div class="d-inline-block">
-                    <select class="form-select form-select-md mb-0" id="max_price" aria-label=".form-select-md example">
-                        <option selected="" value="9000">9000</option>
-                        <option value="11000">11000</option>
-                        <option value="12000">12000</option>
-                        <option value="13000">13000</option>
-                        <option value="14000">14000</option>
+                    <select key="max_price" class="form-select form-select-md mb-0" id="max_price" aria-label=".form-select-md example">
+                        <option selected value="0">NA</option>
+                        <option value="1">11000</option>
+                        <option value="2">12000</option>
+                        <option value="3">13000</option>
+                        <option value="4">14000</option>
                     </select>
                     <hr class="underline">
                 </div>
             </div>
             <div class="col-sm-6 col-md-auto">
                 <h5 class="text-muted">Brand</h5>
-                <select class="form-select form-select-md mb-0" id="brand" aria-label=".form-select-md example">
-                    <option selected="" value="toyota">Toyota</option>
-                    <option value="hundayi">Hundayi</option>
-                    <option value="ford">Ford</option>
-                    <option value="suzuki">Suzuki</option>
-                    <option value="mahindra">Mahindra</option>
+                <select key="brand" class="form-select form-select-md mb-0" id="brand" aria-label=".form-select-md example">
+                    <option selected value="0">NA</option>
+                    <option value="1">Toyota</option>
+                    <option value="2">Hundayi</option>
+                    <option value="3">Ford</option>
+                    <option value="4">Suzuki</option>
+                    <option value="5">Mahindra</option>
                 </select>
                 <hr class="underline">
             </div>
             <div class="col-sm-6 col-md-auto">
                 <h5 class="text-muted">Fuel</h5>
-                <select class="form-select form-select-md mb-0" id="fuel" aria-label=".form-select-md example">
-                    <option selected="" value="petrol">Petrol</option>
-                    <option value="1" value="diesel">Diesel</option>
+                <select key="fuel" class="form-select form-select-md mb-0" id="fuel"  aria-label=".form-select-md example">
+                    <option selected value="0">NA</option>
+                    <option  value="1">Petrol</option>
+                    <option value="2" value="diesel">Diesel</option>
                 </select>
                 <hr class="underline">
             </div>
             <div class="col-sm-6 col-md-auto">
                 <h5 class="text-muted">Transmission</h5>
-                <select class="form-select form-select-md mb-0" id="transmission" aria-label=".form-select-md example">
-                    <option selected="" value="automatic">Automatic</option>
-                    <option value="manual">Manual</option>
+                <select key="transmission" class="form-select form-select-md mb-0" id="transmission" aria-label=".form-select-md example">
+                    <option selected value="0">NA</option>
+                    <option value="1">Automatic</option>
+                    <option value="2">Manual</option>
                 </select>
                 <hr class="underline">
             </div>
+            <a href="#" id="apply">Apply</a>
         </div>
     </div>
     </div>
