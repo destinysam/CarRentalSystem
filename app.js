@@ -10,32 +10,22 @@ function loadData(){ //GETTING DATA FROM JSON FILE
 loadData().then(function(data){
     let vehicles = document.getElementById("vehicleObjects")
     for (da in data){ // ITERATING OVER OBJECTS
-       let div1 = document.createElement("div") //MAIN DIV
-       div1.setAttribute("class","row p-2 border rounded shadow m-1")
-       let div2 = document.createElement("div") // NESTED DIV
-       div2.setAttribute("class","col-md-3 d-flex justify-content-center align-items-center")
-       div2.innerHTML='<img src="forgetPassword.svg" class="img-fluid" alt="VehicleImage" height="50" width="50">'
-       let div3 = document.createElement("div") // NESTED DIV
-       div3.setAttribute("class","col-md-5 p-1 text-center")
-       let p = document.createElement("p")
-       p.setAttribute("class","fs-5 fw-bold")
-       p.textContent= data[da].vehicle_model.model_name
-       let i = document.createElement("i")
-       let span = document.createElement("span")
-       i.setAttribute("class","fas fa-gas-pump")
-       span.textContent= data[da].vehicle_model.fuel
-       let i1 = document.createElement("i")
-       i1.setAttribute("class","fas fa-cogs ms-2")
-       let span1 = document.createElement("span")
-       span1.textContent= data[da].vehicle_model.transmission
-       div3.appendChild(p)
-       div3.appendChild(i)
-       div3.appendChild(span)
-       div3.appendChild(i1)
-       div3.appendChild(span1)
-       div1.appendChild(div2) //ADDING NESTED DIV TO MAIN DIV
-       div1.appendChild(div3) //ADDING NESTED DIV TO MAIN DIV
-       vehicles.appendChild(div1) //ADDING MAIN DIV TO BODY
+       vehicles.innerHTML += '<div class="col-md-12 col-lg-6 g-0">'+
+                                '<div class="row p-2 border rounded shadow m-1">'+  
+                                    '<div class="col-md-3 d-flex justify-content-center align-items-center">'+
+                                        '<img src="forgetPassword.svg" alt="" class="img-fluid">'+
+                                    '</div>'+
+                                    '<div class="col-md-5 p-1 text-center">'+
+                                        `<p class="fs-5 fw-bold">${data[da].vehicle_model.model_name}</p>`+
+                                        `<i class="fas fa-gas-pump"></i> <span>${data[da].vehicle_model.fuel}</span>`+
+                                        '<i class="fas fa-cogs ms-2"></i>'+
+                                        `<span class="carAttribute">${data[da].vehicle_model.transmission}</span>`+
+                                    '</div>'+
+                                    '<div class="col-md-4 p-1 d-flex justify-content-center align-items-center">'+
+                                        '<p class="fs-5 fw-bolder">₹ 1100 <i class="fs-6 fw-light">/month</i></p>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'
     }
 })
 // GETTING VALUES FROM FILTER BOXES
