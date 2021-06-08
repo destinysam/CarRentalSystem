@@ -30,14 +30,14 @@ loadData().then(function(data){
 })
 // GETTING VALUES FROM FILTER BOXES
 function apply_filter_Values(){
-    let Allselect = document.getElementById("filterbars")
-    let AllSelectTags = Allselect.getElementsByTagName("select")
+    let allSelect = document.getElementById("filterbars")
+    let allSelectTags = allSelect.getElementsByTagName("select")
     let dict = {}
-    for (var i=0;i<AllSelectTags.length;i++){
-        let Key = AllSelectTags[i].getAttribute("key")
-        let Value = AllSelectTags[i].value
-        if (Value != 0){
-            dict[Key] = AllSelectTags[i].options[AllSelectTags[i].selectedIndex].text
+    for (let i=0;i<allSelectTags.length;i++){
+        let Key = allSelectTags[i].getAttribute("key")
+        let keyValue = allSelectTags[i].value
+        if (keyValue != 0){
+            dict[Key] = allSelectTags[i].options[allSelectTags[i].selectedIndex].text
         }
         
     }
