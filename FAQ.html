@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <style>
+        .container .collapse:hover{
+
+        }
+    </style> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FAQ-VRS</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="mt-5">
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question1"><i class="fas fa-plus-square"></i></a>
+            <span>Are the vehicles insured?</span>
+            <p class="collapse text-muted ms-5" id="question1">Yes, all our vehicles have mandatory civilian and KASKO insurances.</p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question2"><i class="fas fa-plus-square"></i></a>
+            <span>What are the methods of payment for the car rental services?</span>
+            <p class="collapse text-muted ms-5" id="question2">You can pay with your Debit/Credit Card or UPI</p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question4"><i class="fas fa-plus-square"></i></a>
+            <span>How do i rent a car?</span>
+            <p class="collapse text-muted ms-5" id="question4">You can rent a car by simply clicking on the book button in vehicle section,then complete payment
+                step after that you will get confirmation.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question5"><i class="fas fa-plus-square"></i></a>
+            <span>Can i change the car after the reservation?</span>
+            <p class="collapse text-muted ms-5" id="question5">Yes, if you would like to change or cancel your booking of a car after approving it, please call 
+                +91-1800256256.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question6"><i class="fas fa-plus-square"></i></a>
+            <span>Where can i take the car from and where should i return it?</span>
+            <p class="collapse text-muted ms-5" id="question6">Your can take the car at our given address.The car has to be returned to an agreed location in kashmir.</p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question7"><i class="fas fa-plus-square"></i></a>
+            <span>What should i do, if the car breaks down?</span>
+            <p class="collapse text-muted ms-5" id="question7">If your car breaks down, please call us immediately at +91-1800256256</p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question8"><i class="fas fa-plus-square"></i></a>
+            <span>What time can i contact you?</span>
+            <p class="collapse text-muted ms-5" id="question8">You can call us 24/7 by Ph.no +91-1800256256</p>
+        </div>
+        <hr>
+        <div>
+            <a class="btn btn-secondary me-1" data-bs-toggle="collapse" type="button" href="#question9"><i class="fas fa-plus-square"></i></a>
+            <span>Are there any maps in the car?</span>
+            <p class="collapse text-muted ms-5" id="question9">Yes, if you wish we will provide map of kashmir</p>
+        </div>
+    </div>
+
+   
+    <script>
+        let button = document.getElementsByClassName("fas")
+        for(let i=0;i<button.length;i++){
+            button[i].onclick = function(){
+                if(this.classList.contains("fa-plus-square")){
+                    this.classList.remove("fa-plus-square")
+                    this.classList.add("fa-minus-square")
+                }else{
+                    this.classList.remove("fa-minus-square")
+                    this.classList.add("fa-plus-square")
+                }
+            }
+        }
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
